@@ -14,7 +14,7 @@ namespace Deliverable2
             int encodedCharNum = 0;
             int encodedCharNum2 = 0;
 
-            Console.WriteLine("Enter in any phrase that you would like to be encoded:");
+            Console.WriteLine("Enter any phrase that you would like to be encoded:");
             string input = Console.ReadLine();
             input = input.ToUpper();
 
@@ -37,7 +37,6 @@ namespace Deliverable2
                 encodedCharNum = (int)workingByte - 64;
                 if (encodedCharNum > 0)
                 {
-                    // Console.WriteLine(testing);
                     alphaNumOutput = "" + alphaNumOutput + encodedCharNum + "-";
                 }
             }
@@ -55,9 +54,9 @@ namespace Deliverable2
                 }
             }
 
-            Console.WriteLine("Your encoded message is: " + message); // This is a method that produces the answer is most common
+            Console.WriteLine("Your encoded message is: " + message); // This is a method that produces the answer is the most common
 
-            Console.WriteLine("(A second way to solve) Your encoded message is: " + alphaNumOutput); // This is a method that produces the answer
+            Console.WriteLine("(A second way to solve) Your encoded message is: " + alphaNumOutput); // This is another method that produces the answer
 
             Console.WriteLine("Your Unicode message is: " + builder); // I thought this is what we initially had to do, until I re-read the rubic
 
